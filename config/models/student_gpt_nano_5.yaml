@@ -1,0 +1,8 @@
+backend: langchain_chat_openai
+name: student_gpt_nano_5
+model_id: gpt-5-nano   # همین‌جا هم
+role: student
+temperature: 0.1
+max_tokens: 512
+api_key_env: OPENAI_API_KEY
+base_url_env: OPENAI_BASE_URL

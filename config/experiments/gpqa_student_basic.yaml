@@ -1,0 +1,21 @@
+dataset:
+  name: gpqa
+  version: gpqa_main
+  subject_filter: null
+  subject_mode: high_level
+  difficulty_filter: null
+
+# این همون مدلیه که می‌خوای به عنوان student استفاده کنی (مثلاً gpt-nano-5)
+student_model_config: config/models/student_gpt_nano_5.yaml
+
+conditions:
+  - name: baseline
+    type: baseline          # بدون هیچ analogy
+
+  - name: sag
+    type: with_analogy_csv  # analogy از CSV SAG
+    analogy_csv: data/results/analogies/gpqa_main_sag_sample.csv
+
+  - name: pag
+    type: with_analogy_csv  # analogy از CSV PAG
+    analogy_csv: data/results/analogies/gpqa_main_pag_sample.csv

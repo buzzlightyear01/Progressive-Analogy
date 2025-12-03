@@ -1,0 +1,8 @@
+backend: langchain_chat_openai
+name: teacher_gpt_nano_5
+model_id: gpt-5-nano   # 👈 این رو باید مطابق اسم واقعی مدل تو API خودت تنظیم کنی
+role: teacher
+temperature: 0.4
+max_tokens: 768
+api_key_env: OPENAI_API_KEY
+base_url_env: OPENAI_BASE_URL
